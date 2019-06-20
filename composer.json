@@ -1,0 +1,8 @@
+{
+  "name": "DuoConsulting/duo_layout_page",
+  "description": "Installs the Layout Page content type.",
+  "type": "drupal-module",
+  "keywords": ["Drupal", "Layouts"],
+  "homepage": "https://www.duoconsulting.com",
+  "license": "GPL-2.0+"
+}

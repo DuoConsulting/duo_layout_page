@@ -1,0 +1,13 @@
+name: 'Duo Layout Page'
+description: 'Installs the Layout Page content type.'
+type: module
+core: 8.x
+package: Duo
+dependencies:
+  - field
+  - layout_builder
+  - menu_ui
+  - node
+  - path
+  - user
+version: '1.0'
