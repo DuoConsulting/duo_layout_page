@@ -7,7 +7,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: 'Layout Page'
+name: 'Layout page'
 type: layout
 description: 'A flexible, full-width page that can used to place custom blocks in various layouts.'
 help: ''
