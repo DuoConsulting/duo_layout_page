@@ -2,20 +2,56 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.layout.field_layout_hide_title
     - field.field.node.layout.layout_builder__layout
     - node.type.layout
   module:
     - layout_builder
+    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
     allow_custom: true
     enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          de732135-2383-4546-89ed-9e06c2982289:
+            uuid: de732135-2383-4546-89ed-9e06c2982289
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:layout:field_layout_hide_title'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+                type: boolean
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: node.layout.default
 targetEntityType: node
 bundle: layout
 mode: default
-content: {  }
+content:
+  field_layout_hide_title:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
 hidden:
   layout_builder__layout: true
   links: true

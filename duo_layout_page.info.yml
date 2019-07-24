@@ -6,6 +6,7 @@ package: Duo
 dependencies:
   - field
   - layout_builder
+  - layout_discovery
   - menu_ui
   - node
   - path
