@@ -11,4 +11,3 @@ dependencies:
   - node
   - path
   - user
-version: '1.0'

@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Custom code for Duo Layout Page.
+ */
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function duo_layout_page_preprocess_page(&$variables) {
+  // Define a variable that specifies whether or not the page title should be
+  // hidden. It's up to the theme to decide what to do with the variable.
+  if (
+    isset($variables['node']) &&
+    gettype($variables['node']) == 'object' &&
+    $variables['node']->hasField('field_layout_hide_title')
+  ) {
+    $variables['hide_title'] = $variables['node']->field_layout_hide_title->getString();
+  }
+}
